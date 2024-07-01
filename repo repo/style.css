@@ -1,0 +1,17 @@
+p::first-line {
+    color: #ff0000;
+  }
+  
+  #name::first-letter {
+    color: #11e033;
+  }
+  
+  #before::before {
+    content: ">>";
+    color: rgb(0, 0, 0);
+  }
+  
+  #after::after {
+    content: "<<";
+    color: rgb(200, 255, 0);
+  }
