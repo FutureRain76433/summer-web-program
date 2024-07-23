@@ -1,0 +1,39 @@
+form {
+    width: 375px;
+    height: 375px;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 20px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    color: orange;
+    text-align: center;
+}
+input[type="submit"] {
+    padding: 10px 50px;
+    margin-left: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(172, 227, 172);
+    border: 0px;
+}
+input[name="first_name"],
+input[name="last_name"],
+input[name="job_title"],
+input[name="address"],
+input[name="phone"],
+ textarea {
+    width: calc(50% - 2px);
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-left: 10px;
+    height: 20px;
+}
