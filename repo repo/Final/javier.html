@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javier.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropdown">
+        <select onchange="navigate(this.value)">
+            <option value="javier.html">Javier Martinez</option>
+            <option value="test.html">Home</option>
+            <option value="page2.html">Page 2</option>
+            <option value="secret.html">???</option>
+        </select>
+    </div>
+    
+    <script>
+        function navigate(selectedPage) {
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        }
+    </script>
+    <h1>Javier Martinez</h1>
+    
+    <li name="Question"><b>What part of IT are you interested in, and what motivates you in reaching those interests?</b></li>
+     <p>Well one thing that I'm intrested in is game design. What motivates me to achieve this goal is to have fun.  </p>
+    <li name="Question"><b>What about this internship motivates you more?</b></li>
+    <p>Like I said for the previos question to have fun.
+         In the 7 weeks here I got to meet new people I got to work at a fair.
+          I made new friends I hope I get to see again.
+           I learned alot and got to experians alot.
+            This internship was deffently something I would want to do again. </p>
+    <li name="Question"><b>Based on your internship, what would you like to learn next?</b></li>
+    <p>I would like to learn more about SnapIT</p>
+</body>
+</html>
