@@ -7,23 +7,48 @@
     <title>Form</title>
 </head>
 <body>
+    <div>
     <form action = " ">
         <label for="first_name">First name</label>
-        <input type = "text" name = "first_name" />
+        <input type = "text" name = "first_name" id="first_name"/>
         <br><br>
-        <label for="first_name">Last name</label>
-        <input type = "text" name = "last_name" />
+        <label for="last_name">Last name</label>
+        <input type = "text" name = "last_name" id="last_name"/>
         <br><br>
         <label for="job_title">Job Title</label>
-        <input type="text" name="job_title">
+        <input type="text" name="job_title" id="job_title">
         <br><br>
         <label for="address">Address</label>
-        <input type="text" name="address">
+        <input type="text" name="address" id="address">
         <br><br>
         <label for="phone">Phone</label>
-        <input type="text" name="phone">
+        <input type="text" name="phone" id="phone">
         <br><br>
-        <input type = "submit">
+        <button type="button" onclick="result()">Submit</button><br />
+
+        <div class="out-form">
+            <h3 id="out-fname"></h3>
+            <h3 id="out-lname"></h3>
+            <h3 id="out-jobtitle"></h3>
+            <h3 id="out-address"></h3>
+            <h3 id="out-phone"></h3>
+          </div>
      </form>
+    </div>
 </body>
 </html>
+<script>
+    function result() {
+      const first_name = document.getElementById("first_name").value;
+      const last_name = document.getElementById("last_name").value;
+      const job_title = document.getElementById("job_title").value;
+      const address = document.getElementById("address").value;
+      const phone = document.getElementById("phone").value;
+
+      document.getElementById("out-fname").innerHTML = "First Name: " + first_name;
+      document.getElementById("out-lname").innerHTML = "Last Name: " + last_name;
+      document.getElementById("out-jobtitle").innerHTML = "Job Title: " + job_title
+      document.getElementById("out-address").innerHTML = "Address: " + address
+      document.getElementById("out-phone").innerHTML = "Phone: " + phone
+    }
+  </script>

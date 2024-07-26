@@ -14,15 +14,16 @@ body {
     color: orange;
     text-align: center;
 }
-input[type="submit"] {
-    padding: 10px 50px;
-    margin-left: 40px;
+button {
+    padding: 10px 60px;
+    border: none;
     border-radius: 20px;
     cursor: pointer;
     background-color: rgb(172, 227, 172);
-    border: 0px;
-}
+  }
+
 input[name="first_name"],
+input[name="last_name"],
 input[name="last_name"],
 input[name="job_title"],
 input[name="address"],
@@ -37,3 +38,13 @@ input[name="phone"],
     margin-left: 10px;
     height: 20px;
 }
+.out-form {
+    color: black;
+    font-size: 1em;
+    display: block;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 10em;
+  }
