@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #shape {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="shape"></div>
+     <input type="range" min="50" max="200" value="100" id="sizeRange" style="width: 100%;">
+
+     <script>
+        document.getElementById('sizeRange').addEventListener('input', function() {
+            var size = this.value;
+            document.getElementById('shape').style.width = size + 'px';
+            document.getElementById('shape').style.height = size + 'px';
+        });
+    </script>
+</body>
+</html>
