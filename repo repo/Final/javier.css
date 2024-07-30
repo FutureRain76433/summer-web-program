@@ -28,8 +28,7 @@ p{
 }
 
 
-.dropdown::after {
-    content: '\25BC';  
+.dropdown::after {  
     position: absolute;
     top: 14px;
     right: 10px;
