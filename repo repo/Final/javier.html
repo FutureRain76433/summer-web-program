@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<div class="topbar">
     <div class="dropdown">
         <select onchange="navigate(this.value)">
             <option value="javier.html">Javier Martinez</option>
@@ -15,6 +16,7 @@
             <option value="secret.html">???</option>
         </select>
     </div>
+</div>
     <script>
         function navigate(selectedPage) {
             if (selectedPage) {
@@ -22,7 +24,10 @@
             }
         }
     </script>
-    <h1>Javier Martinez</h1>
+    <div class="background">
+    <h1 class="wiggle-text">Javier Martinez</h1>
+    </div>
+    <div class="words">
     <li name="Question"><b>What inspires you to learn new things and how it impacts you?</b></li>
     <p></p>
     <li name="Question"><b>What part of IT are you interested in, and what motivates you in reaching those interests?</b></li>
@@ -35,6 +40,31 @@
             This internship was deffently something I would want to do again. </p>
     <li name="Question"><b>Based on your internship, what would you like to learn next?</b></li>
     <p>I would like to learn more about SnapIT</p>
-    
+</div>
+    <div id="colorBox" class="box"></div>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+        const colorBox = document.getElementById('colorBox');
+        
+        colorBox.addEventListener('click', () => {
+            // Generate a random color
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            colorBox.style.backgroundColor = randomColor;
+        });
+    });</script>
+    <style>
+        @keyframes wiggle {
+            0% { transform: rotate(-10deg); }
+            50% { transform: rotate(10deg); }
+            100% { transform: rotate(-10deg); }
+        }
+
+        .wiggle-text {
+            font-size: 3em;
+            text-align: center;
+            display: inline-block;
+            animation: wiggle 1s infinite;
+            t
+        } 
+    </style>
 </body>
 </html>

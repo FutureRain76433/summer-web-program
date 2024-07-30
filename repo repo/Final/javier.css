@@ -3,17 +3,16 @@
     list-style-type: circle;
     
 }
-h1{ color: purple;}
+h1{ color: #7b008b;
+    opacity: 69%;}
 p{
     margin-left: 50px;
 }
 .dropdown {
     width: 200px;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: transparent;
     font-size: 16px;
 }
 
@@ -23,7 +22,7 @@ p{
     font-size: 16px;
     border: none;
     outline: none;
-    background-color: #f2f2f2;
+    background-color: transparent;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -36,4 +35,34 @@ p{
     right: 10px;
     color: #666;
     pointer-events: none;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* Initial color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 5px 8px #ddd;
+    background: linear-gradient(to right, purple, #c709bd, yellow);
+}
+.background {
+    background-image: url('https://www.9marks.org/wp-content/uploads/2021/07/Dont-Do-Weird-Stuff-270x250.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+.words{
+    
+    margin-left: 300px;
+    margin-top: 50px;
+    align-items: center;
 }
